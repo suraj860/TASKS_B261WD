@@ -1,0 +1,70 @@
+
+Tasks - July 20, 2021
+
+1) List 5 difference between Browser JS(console) v Nodejs
+
+JS:
+1) JS runs only in browser 
+2) it is bascially used on clientside
+3) Javascript is capable enough to add HTML and play with the DOM
+4) It is the upgraded version of ECMA script that uses Chrome’s V8 engine written in C++
+5) Javascript is used in frontend development.
+
+Nodejs:
+1) NodeJS code can be run outside the browser.
+2) It is mostly used on the server-side
+3) Nodejs does not have capability to add HTML tags
+4) Nodejs is written in C, C++ and Javascript
+5) Nodejs is used in server-side development
+
+2) watch & summary 5 points - https://www.youtube.com/watch?v=SmE4OwHztCc&ab_channel=JSConf
+ans:
+
+The video tells about what happens behind the screen when you try to load any websites,
+redering,parsing,layout and painting terms are discussed in details which takes place one after another while loading a website.
+1) Parsing flow : Their is tokenization that take the text and turn it into what are called tokens that will then create a parse tree which will then create DOM tree 
+  with which we can interact with the help of javascript.
+  ParseHTML- if we  neglect few html tags while codeing, still the code will work .
+  
+2) <script> tag is given at bottom so that parse goes uninterrupted through the elements and then create DoM tree and at the end get the script,
+    it also help for fast rendering
+    css parsing - it will create cssom
+    
+3)  render- combine two object models DOM+CSSOM figures out all the styles applied,
+     and what to show on the screen
+     render trees: tey are multiple
+     render style: apply styles to the DOM element 
+     render layers: tells the position of various layer
+     line boxes : handels text ,fon-size ,lineing ,etc.
+     
+ 4)  Layout - it is a recursive process, it will work with the DOM tree ,it lays its children first according to
+     their height and width and then flows all the way through the tree.
+    paint _ finally has all the info from render tree and gives us the 
+    visual output.
+    
+3) To read - https://stackoverflow.com/questions/5641997/is-it-necessary-to-write-head-body-and-html-tags
+    we can ommit the tag while codeing ,still it will run correctly, because originally it was added  in a way that the tags would be inferred when missing.
+    
+4) Execute the bellow code and write your description in txt file
+      
+      typeof(1)             "number"
+      typeof(1.1)          "number"
+      typeof('1.1')        "string"
+      typeof(true)         "boolean"
+      typeof(null)        "object"
+      typeof(undefined)   "undefined"
+      typeof([])           "object"
+      typeof({})           "object"
+      typeof(NaN)          "number"    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
