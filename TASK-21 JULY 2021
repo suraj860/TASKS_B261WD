@@ -1,0 +1,100 @@
+Task - July 21, 2021
+    1)
+    var obj = [
+          { person: "Name 1", age: "2", company: "GUVI" },
+          { person: "Name 2", age: "5", company: "GUVI geek" },
+          { person: "Name 3", age: "8", company: "GUVI geek network" },
+        ]
+    use the above JSON to iterate over all for loops (for, for in, for of, forEach)
+    
+1)  for loop :
+     for(i=0;i<obj.length;i++){
+    console.log(obj[i]);
+  }
+  
+ 2) for in: 
+   for(var property in obj)
+   {
+   console.log(obj[property]);
+   }
+   
+3) for of:
+    for(var answer of obj)
+{
+console.log(answer);
+}
+
+4) forEach:
+ var obj = [
+          { person: "Name 1", age: "2", company: "GUVI" },
+          { person: "Name 2", age: "5", company: "GUVI geek" },
+          { person: "Name 3", age: "8", company: "GUVI geek network" },
+        ]
+   obj.forEach(key => console.log(key));
+
+
+ 2)
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "https://restcountries.eu/rest/v2/all");
+        xhr.onload = function () {
+          var data = JSON.parse(this.response);
+          console.log(data);
+        };
+        xhr.send();
+    use the restcountries API url ->  https://restcountries.eu/rest/v2/all
+    and display all the country flags in console
+
+ans:
+var xhr = new XMLHttpRequest();      
+xhr.open("GET", "https://restcountries.eu/rest/v2/all");       
+ xhr.onload = function () {        
+ var data = JSON.parse(this.response);       
+  for(i=0; i<data.length ; i++){
+   console.log(data[i].flag);           
+    }
+    };
+ xhr.send();
+ 
+ output:
+ https://restcountries.eu/data/afg.svg
+javascript.js:11 https://restcountries.eu/data/ala.svg
+javascript.js:11 https://restcountries.eu/data/alb.svg
+javascript.js:11 https://restcountries.eu/data/dza.svg
+javascript.js:11 https://restcountries.eu/data/asm.svg
+
+3) use the same restcountries and print all countries name, region, sub region and population.
+ans:
+var xhr = new XMLHttpRequest();      
+xhr.open("GET", "https://restcountries.eu/rest/v2/all");       
+ xhr.onload = function () {        
+ var data = JSON.parse(this.response);        
+  for(i=0; i<data.length ; i++){
+  console.log(data[i].name);
+  console.log(data[i].region);
+  console.log(data[i].population);         
+    }
+    };
+ xhr.send();
+ 
+ output:
+ Afghanistan
+javascript.js:7 Asia
+javascript.js:8 27657145
+javascript.js:6 Åland Islands
+javascript.js:7 Europe
+javascript.js:8 28875
+javascript.js:6 Albania
+javascript.js:7 Europe
+javascript.js:8 2886026
+javascript.js:6 Algeria
+javascript.js:7 Africa
+javascript.js:8 40400000
+javascript.js:6 American Samoa
+javascript.js:7 Oceania
+javascript.js:8 57100
+javascript.js:6 Andorra
+javascript.js:7 Europe
+javascript.js:8 78014
+
+ 4) read about the difference between window, screen and document in javascript
+ 
