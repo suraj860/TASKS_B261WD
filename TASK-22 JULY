@@ -1,0 +1,66 @@
+
+ 1) create your own resume data in JSON format
+
+var resume = { personaldetails: {
+                                 name : "suraj maruti patil" ,
+                                 
+                                 email : "surajpatil131297@gmail.com" ,
+                                 
+                                 birthDate: 13 "december" 1997 ,
+                                 
+                                 languages:[marathi,hindi,english] ,
+                                 
+                                 address: "vitthalaee colony kolhapur"
+                                 
+                                 },
+                                 
+                qualification: { 
+                                 bachelorOfEngineering:"D.I.E.T satara",
+                                
+                                 hsc : "main rajaram college" ,
+                                 
+                                 ssc: "royal english highschool"
+                                 
+                                 },
+                                 
+                technicalSkills:{
+                                designSoftwares:[solidworks,catia,cadd]
+                                },
+                
+                projects:{
+                           finalYearProject:"cowDung brequetting machine" ,
+                           
+                           miniproject:"automatic car jack"
+                            },
+                            
+                hobbies:[onlineGameing,travelling,foodie],
+                
+                };
+                
+    
+2) how to compare two JSON have the same properties without order?
+        var obj1 = { name: "Person 1", age:5 };
+        var obj2 = { age:5, name: "Person 1" };
+        
+   solution:
+    var obj1 = { name: "Person 1", age:5 };
+    var obj2 = { age:5, name: "Person 1" };
+    
+    console.log(JSON.stringify[obj1]===JSON.stringify[obj2]);
+   
+    output// false
+    
+3) https://medium.com/@reach2arunprakash/www-guvi-io-zen-d395deec1373
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
