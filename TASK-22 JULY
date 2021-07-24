@@ -51,9 +51,244 @@ var resume = { personaldetails: {
     output// false
     
 3) https://medium.com/@reach2arunprakash/www-guvi-io-zen-d395deec1373
-    
-    
-    
+
+Task 1: Simple Programs todo for variables
+
+1)How to get value of the variable myvar as output
+
+var a = 100;
+console.log(a);
+
+Output:
+100
+
+2) Declare variables to store your first name, last name, marital status, country and age in multiple lines
+
+var firstName = "Suraj";
+var lastName = "Patil";
+var maritalStatus = "Single";
+var country = "India";
+var age = 23;
+
+3) Declare variables to store your first name, last name, marital status, country and age in a single line
+ 
+ var firstName = "Suraj" , lastName = "Patil" , martialStatus = "Single" , country = "India" , age = 23;
+ 
+Declare variables and assign string, boolean, undefined and null data types
+
+var string = "GuviGeek";
+var boolean = true;
+var aa = undefined;
+
+4)Convert the string to integer
+parseInt()
+Number()
+Plus sign(+)
+
+var a = "100"
+console.log(parseInt(a));
+console.log(+a);
+
+Task 2: Simple Programs todo for Operators
+
+1)Square of a number
+
+let number = 4;
+console.log(Math.pow(number,2));
+
+Output:
+16
+
+2)Swapping 2 numbers
+
+let array = [1,2];
+let temp = array[0];
+array[0]=array[1];
+array[1]=temp,
+console.log(array);
+
+Output:
+[ 2, 1 ]
+
+3)Addition of 3 numbers
+
+let a = 2 , b = 9 , c = 4;
+console.log(a + b + c);
+
+Output:
+15
+
+4)Celsius to Fahrenheit conversion
+
+let celcius = 20;
+let farhenite = (celcius*1.8)+32;
+console.log(farhenite);
+
+Output:
+68
+
+5)Meter to miles
+
+let meter = 2;
+let miles = (meter/1609.344);
+console.log(miles);
+
+Output:
+0.00124274
+
+6)Pounds to kg
+
+let pound = 5;
+let kg = pound*0.453;
+console.log(kg);
+
+Output:
+2.265
+
+7)Calculate Batting Average
+
+let runs = [100,99,98,97,99,100];
+let sum = 0;
+for(i=0 ; i<runs.length ; i++){
+    sum = sum + runs[i];   
+}
+let average = sum/runs.length;
+console.log(average.toFixed(2));
+
+Output:
+98.83
+
+8)Calculate five test scores and print their average
+
+let a=20 , b=25 , c=12 , d=13 , e=15;
+let sum = a+b+c+d+e;
+console.log(sum/5);
+
+Output:
+17
+
+9)Power of any number x ^ y.
+
+console.log(Math.pow(x,y));
+
+10)Calculate Simple Interest
+
+let amount = 600000;
+let interest = 15;
+let time = 1;
+console.log((amount*interest*time)/100);
+
+Output:
+90000
+
+11)Calculate area of an equilateral triangle
+
+let sides = 8;
+let area = (1.73/4)*(Math.pow(sides,2));
+console.log(area);
+
+Output:
+27.68
+
+12)Area Of Isosceles Triangle
+
+let base = 8;
+let height = 10
+let area = (0.5*base*height);
+console.log(area);
+
+Output:
+40
+
+13)Volume Of Sphere
+
+let radius = 8;
+let volume = (4/3)*(22/7)*(Math.pow(radius,3));
+console.log(volume.toFixed(2));
+
+Output:
+2145.52
+
+14)Volume Of Prism
+
+let base = 8;
+let height = 12 ;
+console.log(base*height);
+
+Output:
+96
+
+15)Find area of a triangle.
+
+let base = 5;
+let height = 2.5
+let area = (0.5*base*height);
+console.log(area);
+
+Output:
+6.25
+
+16)Give the Actual cost and Sold cost, Calculate Discount Of Product
+
+let actualCost = 250;
+let soldCost = 200;
+console.log(actualCost-soldCost)
+
+Output:
+50
+
+17)Given their radius of a circle and find its diameter, circumference and area.
+
+let radius = 5;
+let dia = 2*radius;
+let circumference = 2*(22/7)*radius;
+let area = (22/7)*(Math.pow(radius,2));
+console.log(dia);
+console.log(circumference.toFixed(2));
+console.log(area.toFixed(2));
+
+Output:
+10
+31.43
+78.57
+
+18)Given two numbers and perform all arithmetic operations.
+
+let a = 10 , b = 5 
+console.log("Add"+"="+a+b);
+console.log("Substract"+"="+(a-b));
+console.log("Multiply"+"="+a*b);
+console.log("Division"+"="+a/b);
+
+Output:
+Add=105
+Substract=5
+Multiply=50
+Division=2
+
+19)Display the asterisk pattern as shown below(No loop needed):
+*****
+*****
+*****
+*****
+*****  
+ 
+let a = "*****"
+console.log(a);
+console.log(a);
+console.log(a);
+console.log(a);
+console.log(a);
+
+Output:
+*****
+*****
+*****
+*****
+*****
+
+
+
     
     
     
