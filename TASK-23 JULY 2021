@@ -1,0 +1,149 @@
+
+Task - July 23, 2021
+    1) Do the below programs in anonymous function & IIFE
+        Print odd numbers in an array 
+        
+ anonymous -    var array = [1,2,3,4,5,6,7,8,9];
+                var foo = function(value){
+        
+                for(i=0 ; i<array.length ; i++){
+        
+                 if(array[i]%2!==0){
+        
+                 console.log(array[i]);
+          
+                    }
+                   }
+                  }
+                 foo(array);
+  IIFE -      var array = [1,2,3,4,5,6,7,8,9];
+ 
+              (function(value){
+    
+              for(i=0 ; i<array.length ; i++){
+        
+              if(array[i]%2!==0){
+            
+             console.log(array[i]);
+               }
+             }
+            })(array)
+   Output:
+1
+3
+5
+7
+9
+
+        Convert all the strings to title caps in a string array
+        
+  ANONYMOUS - var name = "suraj patil";
+             var capital = function(value){
+                                console.log(value.toUpperCase());
+                                   }
+                capital(name);
+                
+  IIFE  -    var name = "suraj patil";
+             (function(value){
+                   console.log(value.toUpperCase());
+             })(name);
+             
+     Output:
+    SURAJ PATIL
+
+        Sum of all numbers in an array
+  
+  ANONYMOUS - var a = [1,2,3,4,5,6,7,8,9,10];
+
+               var calculation = function(value){
+    
+                 var sum = 0;
+    
+                 for(i=0 ; i<a.length ; i++){
+        
+                     sum = sum + a[i];
+        
+                   }
+    
+                console.log(sum);
+                  }
+
+                calculation(a);   
+                
+   IIFE -    var a = [1,2,3,4,5,6,7,8,9,10];
+
+(function(value){
+    
+    var sum = 0;
+    
+    for(i=0 ; i<a.length ; i++){
+        
+        sum = sum + a[i];
+        
+    }
+    
+    console.log(sum);
+})(a);
+
+Output:
+55
+   
+        Return all the prime numbers in an array
+        
+ANONYMOUS - 
+        Return all the palindromes in an array
+        Return median of two sorted arrays of same size 
+        Remove duplicates from an array
+        Rotate an array by k times 
+    2) https://medium.com/@reach2arunprakash/guvi-zen-class-javascript-warm-up-programming-problems-15973c74b87f
+    
+    
+    3) Do the below programs in arrow functions
+        Print odd numbers in an array 
+        
+        var a = [1,2,3,4,5,6,7,8,9,10];
+        var odd = ()=>{
+        for(i=0 ; i<a.length ; i++){
+        if(a[i]%2!==0){
+         console.log(a[i]);
+           }
+          }
+         };
+      odd(a);
+      
+      Output:
+         1
+         3
+         5
+         7
+         9
+         
+        Convert all the strings to title caps in a string array
+        
+        var name = "suraj patil";
+        var aa = ()=>{
+    
+       console.log(name.toUpperCase());
+          };
+       aa(name);
+       
+        Sum of all numbers in an array
+        
+        var a = [1,2,3,4,5,6,7,8,9,10];
+
+        var calculation = () =>{
+    
+         var sum = 0;
+    
+         for(i=0 ; i<a.length ; i++){
+        
+          sum = sum + a[i];
+        
+           }
+    
+       console.log(sum);
+         }
+        calculation(a)
+        
+        Return all the prime numbers in an array
+        Return all the palindromes in an array
