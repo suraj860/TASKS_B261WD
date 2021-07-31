@@ -1,0 +1,73 @@
+1) https://github.com/rvsp/typescript-oops/blob/master/Practice/class-circle.md
+circle
+SOLN:
+
+class circle{
+  constructor(radius,color){
+    this.radius = radius;
+    this.color = color;
+  }
+  getcircumference(){
+    let cir = 2*(22/7)*this.radius
+    console.log( cir.toFixed(2) , this.color)
+  }
+}
+
+var data = new circle( 2 , "Orange");
+
+data.getcircumference();
+
+OUTPUT:
+12.57 Orange
+
+2) 
+class details{
+  constructor(name,age,gender){
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+    this.nationality = "Indian";
+  }
+  getdata(){
+    console.log("Name - "+ this.name);
+    console.log("Age - "+ this.age);
+    console.log("Gender - "+ this.gender);
+    console.log("Nationality - "+ this.nationality);
+    
+  }
+}
+
+var person = new details ("Mark", 23 , "Male");
+person.getdata();
+
+OUTPUT
+Name - Mark
+javascript.js:11 Age - 23
+javascript.js:12 Gender - Male
+javascript.js:13 Nationality - Indian
+
+3)write a class to calculate uber price.
+class uber{
+  constructor(km){
+    this.km = km;
+  }
+  getdata(){
+    console.log(this.km*10)
+  }
+}
+
+var kilometer = new uber(12);
+kilometer.getdata();
+
+OUTPUT:
+120
+
+
+
+
+
+
+
+
+
+
