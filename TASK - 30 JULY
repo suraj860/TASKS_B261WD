@@ -25,7 +25,7 @@ SOLN:
  {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…},
  {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
  
- Get all the countries with a population of less than 2 lakhs using Filter function
+2) Get all the countries with a population of less than 2 lakhs using Filter function
  
  SOLN:
  
@@ -49,7 +49,7 @@ OUTPUT:
 63) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, 
 {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
 
-Print the total population of countries using reduce function
+3) Print the total population of countries using reduce function
 
 SOLN:
 
@@ -70,7 +70,75 @@ var xhr = new XMLHttpRequest();
 OUTPUT:
 7349137231
 
-Print the country which uses US Dollars as currency.
+4) Print the following details name, capital, flag using forEach function
 
 SOLN:
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "https://restcountries.eu/rest/v2/all");
+xhr.onload = function () {
 
+ var data = JSON.parse(this.response); 
+ 
+  data.forEach(function(value){
+  console.log(value.name);
+  console.log(value.flag);
+  console.log(value.capital);
+ 
+ });
+
+};
+
+xhr.send();
+
+OUTPUT:
+javascript.js:7 Afghanistan
+javascript.js:8 https://restcountries.eu/data/afg.svg
+javascript.js:9 Kabul
+javascript.js:7 Åland Islands
+javascript.js:8 https://restcountries.eu/data/ala.svg
+javascript.js:9 Mariehamn
+javascript.js:7 Albania
+javascript.js:8 https://restcountries.eu/data/alb.svg
+javascript.js:9 Tirana
+javascript.js:7 Algeria
+javascript.js:8 https://restcountries.eu/data/dza.svg
+javascript.js:9 Algiers
+javascript.js:7 American Samoa
+javascript.js:8 https://restcountries.eu/data/asm.svg
+javascript.js:9 Pago Pago
+javascript.js:7 Andorra
+javascript.js:8 https://restcountries.eu/data/and.svg
+javascript.js:9 Andorra la Vella
+
+5) Print the country which uses US Dollars as currency.
+
+SOLN :
+var xhr = new XMLHttpRequest();
+   xhr.open("GET", "https://restcountries.eu/rest/v2/all");
+   xhr.onload = function () {
+   
+    var data = JSON.parse(this.response);
+    
+    data.filter((values)=>{
+      if(values.currencies[0]["code"]=="USD"){
+        console.log(values.name);
+      }
+    })
+   };
+ xhr.send();
+ 
+ OUTPUT:
+javascript.js:8 American Samoa
+javascript.js:8 Bonaire, Sint Eustatius and Saba
+javascript.js:8 British Indian Ocean Territory
+javascript.js:8 United States Minor Outlying Islands
+javascript.js:8 Virgin Islands (U.S.)
+javascript.js:8 Ecuador
+javascript.js:8 El Salvador
+javascript.js:8 Guam
+javascript.js:8 Marshall Islands
+javascript.js:8 Northern Mariana Islands
+javascript.js:8 Puerto Rico
+javascript.js:8 Timor-Leste
+javascript.js:8 Turks and Caicos Islands
+javascript.js:8 United States of America
