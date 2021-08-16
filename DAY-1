@@ -1,0 +1,31 @@
+1. To read:
+https://stackoverflow.com/questions/1517582/what-is-the-difference-between-statically-typed-and-dynamically-typed-languages
+https://stackoverflow.com/questions/17253545/scripting-language-vs-programming-language
+
+OVERVIEW:
+
+difference between statically-typed and dynamically-typed;
+
+Statically-typed:
+A programming language is said to use static typing 
+when type checking is performed during compile-time as opposed to run-time. 
+In static typing, types are associated with variables not values.
+
+Dynamically-typed: 
+ A programming language is said to be dynamically typed,
+ or just dynamic, when the majority of its type checking is performed at 
+ run-time as opposed to at compile-time. In dynamic typing,
+ types are associated with values not variables.
+ Dynamically typed languages include Groovy, JavaScript
+ 
+ Programming Language:
+ A programming language is a formal language comprising a set of strings
+ that produce various kinds of machine code output. Programming languages
+ are one kind of computer language, and are used in computer programming
+ to implement algorithms.
+ 
+ Scripting Language:
+ Scripting language is a series of commands that are able to be executed without the need for compiling.
+ While all scripting languages are programming languages not all programming languages are scripting languages.
+Scripting languages use a program known as an interpreter to translate commands and are directly
+interpreted from source code, not requiring a compilation step. 
